@@ -33,6 +33,7 @@ $(document).ready(function() {
                 console.log('innovazione')
                 $('#innovazione').addClass('innovazione');
                 $('.dot').addClass('anima');
+                 $('.line').addClass('anima');
                 $('#section3 .divsvg').addClass('anim');
                 $('#section3').addClass('coloranima')
 
