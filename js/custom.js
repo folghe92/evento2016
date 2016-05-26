@@ -103,6 +103,7 @@ $(document).ready(function() {
                 $("#section8 #puntino2").addClass('dueanim')
                 $("#section8 #puntino3").addClass('treanim')
                 $("#section8 #puntino4").addClass('quattroanim')
+                $("#section8 #puntino5").addClass('cinqueanim')
             }
             if(index == 10){
                 $("#piccolo").typed({
