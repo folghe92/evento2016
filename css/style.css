@@ -391,7 +391,7 @@ a { color:#fff; text-decoration: none;}
 
 #cerchio7 {
     fill: whitesmoke;
-    stroke: #fff;
+    stroke: whitesmoke;
     stroke-width: 6px;
     stroke-linecap: round;
     stroke-miterlimit: 10;
@@ -423,7 +423,7 @@ a { color:#fff; text-decoration: none;}
 
 .cls-1 {
     fill: transparent;
-    stroke: #fff;
+    stroke: whitesmoke;
     stroke-width: 6px;
     stroke-linecap: round;
     stroke-miterlimit: 10;
@@ -449,7 +449,7 @@ a { color:#fff; text-decoration: none;}
   }
     100% {
         stroke-dashoffset: 0;
-        fill:white;
+        fill:whitesmoke;
     }
     
 }
