@@ -6,15 +6,28 @@ $(document).ready(function() {
                     strings: ["Be innovative, it's simple."],
                     typeSpeed: 0
                 });*/
-                $('#section0 .divsvg').addClass('anim')
+                $('#section0 .divsvg').addClass('anim');
+                $('#section0 #tag').addClass('scalestart');
+                setTimeout(function(){
+                  $.fn.fullpage.moveTo(2);
+                }, 3100);
+                
             }
             if(index == 2){
                $("#ciao").typed({
                     strings: ["Ciao "],
-                    typeSpeed: 0
+                    typeSpeed: 50
                 });
+                $('#section1 .divsvg').addClass('anim');
+                $('#punto').addClass('panim');
+                setTimeout(function(){
+                  $.fn.fullpage.moveTo(3);
+                }, 3100);
                 $('#section1 .divsvg').addClass('anim')
                 $('#punto').addClass('panim')
+                $('.lineetag').addClass('lineeanim')
+                $('#beinnovative').addClass('lineeanim')
+                $('#simple').addClass('lineeanim')
                 
                /* setTimeout(function(){
                   $('#section1 .typed-cursor').css({'display': "none"})
@@ -51,7 +64,7 @@ $(document).ready(function() {
             }
             if(index == 6){
                 $("#confondere").typed({
-                    strings: ["Ma attento a non confondere invenzine con innovazione:", "sono due cose diverse."],
+                    strings: ["Ma attento a non confondere invenzione con innovazione:", "sono due cose diverse."],
                     typeSpeed: 0
                 });
                 $('#section5 .divsvg').addClass('anim')
@@ -91,11 +104,14 @@ $(document).ready(function() {
                     strings: ["concentrato", "<span id='focalizzato'>focalizzato</span>", "ossessionato"],
                     typeSpeed: 100,
                     startDelay: 1800,
+                    /*callback: function() {
+                        ('#focalizzato').css({filter: blur(0px)});
+                    },*/
                     
                 });
                 $('#section8 .divsvg').addClass('anim')
                 /*$('#section6 .testo').addClass('testoinvenz')*/
-                 setTimeout(function(){
+                setTimeout(function(){
                   $('#section8 #diventare .typed-cursor').css({'display': "none"})
                 }, 1300);
                 
@@ -104,13 +120,21 @@ $(document).ready(function() {
                 $("#section8 #puntino3").addClass('treanim')
                 $("#section8 #puntino4").addClass('quattroanim')
                 $("#section8 #puntino5").addClass('cinqueanim')
+                $("#section8 #puntino6").addClass('seianim')
+                $("#section8 #puntino7").addClass('setteanim')
+                $("#section8 #puntino8").addClass('ottoanim')
+                $("#section8 #puntino9").addClass('noveanim')
+                $("#section8 #puntino10").addClass('diecianim')
             }
             if(index == 10){
                 $("#piccolo").typed({
-                    strings: ["Non preoccuparti se ti senti piccolo."],
+                    strings: ["Non ti preoccupare se ti senti piccolo."],
                     typeSpeed: 0
                 });
                 $('#section9 .divsvg').addClass('anim')
+                 $('#section9 #piccolo').addClass('picanim')
+                 $('#section9 .testo').addClass('testopiccoloanim')
+                 $('#section9 .typed-cursor').addClass('cursoreanim')
                 /*$('#section6 .testo').addClass('testoinvenz')*/
 
 
