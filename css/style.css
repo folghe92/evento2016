@@ -42,6 +42,36 @@ body {
     overflow: hidden;
 }
 
+.lineetag {
+    height: 15px;
+    width: 1px;
+    position: fixed;
+    z-index: 99999999999999999999;
+    background: gray;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.lineetag.lineeanim, #simple.lineeanim, #beinnovative.lineeanim{
+    animation: tag 1s linear;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tag {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#lineasopra {
+    top: 0;
+}
+
+#lineasotto {
+    bottom: 0;
+}
 
 #simple {
     position: fixed;
@@ -53,6 +83,7 @@ body {
     width: 100%;
     text-transform: uppercase;
     font-weight: 100;
+    opacity: 0;
 }
 
 #beinnovative{
@@ -65,6 +96,7 @@ body {
     width: 100%;
     text-transform: uppercase;
     font-weight: 100;
+    opacity: 0;
 }
 
 .divsvg {
@@ -369,7 +401,7 @@ a { color:#fff; text-decoration: none;}
 }
 
 .cls-1 {
-    fill: transparent !important;
+    fill: transparent;
     stroke: #fff;
     stroke-width: 6px;
     stroke-linecap: round;
@@ -379,19 +411,26 @@ a { color:#fff; text-decoration: none;}
 }
 
 .cerchioani .cls-1 {
-    animation: cerchio 1.3s ease-in-out;
+    animation: cerchio 6.3s ease-in-out;
     animation-iteration-count: 1;
     animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
 @keyframes cerchio {
-  from {
+  0 {
     stroke-dashoffset: 690;
+    fill:transparent;
   }
-  to {
+  30% {
     stroke-dashoffset: 0;
+    fill:transparent;
   }
+    100% {
+        stroke-dashoffset: 0;
+        fill:white;
+    }
+    
 }
 
 #triangolo {
@@ -416,13 +455,13 @@ a { color:#fff; text-decoration: none;}
     0%   {transform: scale(0); opacity: 0; visibility: hidden; left: 51%}
     10%  {transform: scale(1.2); opacity: 1; visibility: visible;left: 51%}
     14% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
-    77% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
+    79% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
     97% {transform: scale(1); opacity: 1; visibility: visible;left: 47%}
     100% {transform: scale(1); opacity: 1; visibility: visible;left: 48%}
 }
 
 .st0 {
-    fill: none;
+    fill: whitesmoke !important;
     stroke: whitesmoke;
     stroke-width: 10px;
     stroke-miterlimit: 10;
@@ -478,13 +517,13 @@ a { color:#fff; text-decoration: none;}
 }
 
 #puntino1.unoanim {
-    animation: unoanim 0.3s ease-in-out;
+    animation: punti 0.3s ease-in-out;
     animation-delay: 8.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-@keyframes unoanim {
+@keyframes punti {
     0% {transform: scale(0); visibility: hidden;}
     70% {transform: scale(1.2); visibility: visible;}
     100%{transform: scale(1); visibility: visible;}
@@ -497,16 +536,10 @@ a { color:#fff; text-decoration: none;}
 }
 
 #puntino2.dueanim {
-    animation: dueanim 0.3s ease-in-out;
+    animation: punti 0.3s ease-in-out;
     animation-delay: 8.6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-@keyframes dueanim {
-    0% {transform: scale(0); visibility: hidden;}
-    70% {transform: scale(1.2); visibility: visible;}
-    100%{transform: scale(1); visibility: visible;}
 }
 
 #puntino3 {
@@ -516,16 +549,10 @@ a { color:#fff; text-decoration: none;}
 }
 
 #puntino3.treanim {
-    animation: treanim 0.3s ease-in-out;
+    animation: punti 0.3s ease-in-out;
     animation-delay: 8.9s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-@keyframes treanim {
-    0% {transform: scale(0); visibility: hidden;}
-    70% {transform: scale(1.2); visibility: visible;}
-    100%{transform: scale(1); visibility: visible;}
 }
 
 #puntino4 {
@@ -535,17 +562,90 @@ a { color:#fff; text-decoration: none;}
 }
 
 #puntino4.quattroanim {
-    animation: quattroanim 0.3s ease-in-out;
+    animation: punti 0.3s ease-in-out;
     animation-delay: 9s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-@keyframes quattroanim {
-    0% {transform: scale(0); visibility: hidden;}
-    70% {transform: scale(1.2); visibility: visible;}
-    100%{transform: scale(1); visibility: visible;}
+#puntino5 {
+    top: 52%;
+    left: 30%;
+    visibility: hidden;
 }
+
+#puntino5.cinqueanim {
+    animation: punti 0.3s ease-in-out;
+    animation-delay: 9.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#puntino6 {
+    top: 20%;
+    left: 30%;
+    visibility: hidden;
+}
+
+#puntino6.seianim {
+    animation: punti 0.3s ease-in-out;
+    animation-delay: 9.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#puntino7 {
+    top: 4%;
+    left: 72%;
+    visibility: hidden;
+}
+
+#puntino7.setteanim {
+    animation: punti 0.3s ease-in-out;
+    animation-delay: 9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#puntino8 {
+    top: 60%;
+    left: 90%;
+    visibility: hidden;
+}
+
+#puntino8.ottoanim {
+    animation: punti 0.3s ease-in-out;
+    animation-delay: 8.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#puntino9 {
+    top: 64%;
+    left: 16%;
+    visibility: hidden;
+}
+
+#puntino9.noveanim {
+    animation: punti 0.3s ease-in-out;
+    animation-delay: 8.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#puntino10 {
+    top: 68%;
+    left: 76%;
+    visibility: hidden;
+}
+
+#puntino10.diecianim {
+    animation: punti 0.3s ease-in-out;
+    animation-delay: 8.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 
 /*ANIMAZIONE TESTO*/
 .typed-cursor{
@@ -827,6 +927,241 @@ a { color:#fff; text-decoration: none;}
 }
 
 .dot:nth-child(20) {
+  -webkit-transform: rotate(633.27grad);
+          transform: rotate(633.27grad);
+}
+/*INNOVAZIONE-line*/
+
+@-webkit-keyframes line-x-animation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  20% {
+    -webkit-transform: translateX(-2000%);
+            transform: translateX(-2000%);
+    -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+  100% {
+    -webkit-transform: translateX(2000%);
+            transform: translateX(2000%);
+    -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+}
+
+@keyframes line-x-animation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  20% {
+    -webkit-transform: translateX(-2000%);
+            transform: translateX(-2000%);
+    -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+  100% {
+    -webkit-transform: translateX(2000%);
+            transform: translateX(2000%);
+    -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+}
+@-webkit-keyframes line-y-animation {
+  0%{
+    -webkit-transform: translateY(0) scale(2);
+            transform: translateY(0) scale(2);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform: translateY(-2200%) scale(1);
+            transform: translateY(-2200%) scale(1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+    100%{
+    -webkit-transform: translateY(2200%) scale(2);
+            transform: translateY(2200%) scale(2);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+    
+}
+@keyframes line-y-animation {
+  0% {
+    -webkit-transform: translateY(0) scale(2);
+            transform: translateY(0) scale(2);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform: translateY(-2200%) scale(1);
+            transform: translateY(-2200%) scale(1);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+    100%{
+    -webkit-transform: translateY(2200%) scale(2);
+            transform: translateY(2200%) scale(2);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+    
+}
+.line {
+    position: absolute;
+    top: calc(50% - 3px);
+    left: calc(50% - 3px);
+    width: 0.1%;
+    height: 1%;
+}
+.line div {
+  width: 100%;
+  height: 100%;
+}
+.line.anima div {
+  -webkit-animation: line-x-animation 2.5s infinite;
+          animation: line-x-animation 2.5s infinite;
+}
+
+.line div::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.line.anima div::before {
+  -webkit-animation: line-y-animation 2.5s infinite;
+          animation: line-y-animation 2.5s infinite;
+}
+
+.line--aqua div::before {
+  background-color: white;
+}
+
+.line--gold.anima div,
+.line--gold.anima div::before {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.line--gold.anima div::before {
+  background-color: white;
+}
+
+.line--tomato.anima div,
+.line--tomato.anima div::before {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.line--tomato div::before {
+  background-color: white;
+}
+
+
+.line:nth-child(1) {
+  -webkit-transform: rotate(0grad);
+          transform: rotate(0grad);
+}
+
+.line:nth-child(2) {
+  -webkit-transform: rotate(33.33grad);
+          transform: rotate(33.33grad);
+}
+
+.line:nth-child(3) {
+  -webkit-transform: rotate(66.66grad);
+          transform: rotate(66.66grad);
+}
+
+.line:nth-child(4) {
+  -webkit-transform: rotate(99.99grad);
+          transform: rotate(99.99grad);
+}
+
+.line:nth-child(5) {
+  -webkit-transform: rotate(133.32grad);
+          transform: rotate(133.32grad);
+}
+
+.line:nth-child(6) {
+  -webkit-transform: rotate(166.65grad);
+          transform: rotate(166.65grad);
+}
+
+.line:nth-child(7) {
+  -webkit-transform: rotate(199.98grad);
+          transform: rotate(199.98grad);
+}
+
+.line:nth-child(8) {
+  -webkit-transform: rotate(233.31grad);
+          transform: rotate(233.31grad);
+}
+
+.line:nth-child(9) {
+  -webkit-transform: rotate(266.64grad);
+          transform: rotate(266.64grad);
+}
+
+.line:nth-child(10) {
+  -webkit-transform: rotate(299.97grad);
+          transform: rotate(299.97grad);
+}
+
+.line:nth-child(11) {
+  -webkit-transform: rotate(333.3grad);
+          transform: rotate(333.3grad);
+}
+
+.line:nth-child(12) {
+  -webkit-transform: rotate(366.63grad);
+          transform: rotate(366.63grad);
+}
+
+.line:nth-child(13) {
+  -webkit-transform: rotate(399.96grad);
+          transform: rotate(399.96grad);
+}
+
+.line:nth-child(14) {
+  -webkit-transform: rotate(433.29grad);
+          transform: rotate(433.29grad);
+}
+
+.line:nth-child(15) {
+  -webkit-transform: rotate(466.62grad);
+          transform: rotate(466.62grad);
+}
+
+.line:nth-child(16) {
+  -webkit-transform: rotate(499.95grad);
+          transform: rotate(499.95grad);
+}
+
+.line:nth-child(17) {
+  -webkit-transform: rotate(533.28grad);
+          transform: rotate(533.28grad);
+}
+
+.line:nth-child(18) {
+  -webkit-transform: rotate(566.61grad);
+          transform: rotate(566.61grad);
+}
+
+.line:nth-child(19) {
+  -webkit-transform: rotate(599.94grad);
+          transform: rotate(599.94grad);
+}
+
+.line:nth-child(20) {
   -webkit-transform: rotate(633.27grad);
           transform: rotate(633.27grad);
 }

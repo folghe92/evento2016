@@ -23,6 +23,11 @@ $(document).ready(function() {
                 setTimeout(function(){
                   $.fn.fullpage.moveTo(3);
                 }, 3100);
+                $('#section1 .divsvg').addClass('anim')
+                $('#punto').addClass('panim')
+                $('.lineetag').addClass('lineeanim')
+                $('#beinnovative').addClass('lineeanim')
+                $('#simple').addClass('lineeanim')
                 
                /* setTimeout(function(){
                   $('#section1 .typed-cursor').css({'display': "none"})
@@ -41,6 +46,7 @@ $(document).ready(function() {
                 console.log('innovazione')
                 $('#innovazione').addClass('innovazione');
                 $('.dot').addClass('anima');
+                 $('.line').addClass('anima');
                 $('#section3 .divsvg').addClass('anim');
                 $('#section3').addClass('coloranima')
 
@@ -110,6 +116,12 @@ $(document).ready(function() {
                 $("#section8 #puntino2").addClass('dueanim')
                 $("#section8 #puntino3").addClass('treanim')
                 $("#section8 #puntino4").addClass('quattroanim')
+                $("#section8 #puntino5").addClass('cinqueanim')
+                $("#section8 #puntino6").addClass('seianim')
+                $("#section8 #puntino7").addClass('setteanim')
+                $("#section8 #puntino8").addClass('ottoanim')
+                $("#section8 #puntino9").addClass('noveanim')
+                $("#section8 #puntino10").addClass('diecianim')
             }
             if(index == 10){
                 $("#piccolo").typed({
