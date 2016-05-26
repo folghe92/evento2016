@@ -264,6 +264,10 @@ body {
     100% {transform: scale(600); opacity: 1; visibility: visible;}
 }
 
+#section4 {
+    background-color: #bfd13f;
+}
+
 #section3.coloranima {
     -webkit-animation: color_change 10s infinite alternate;
 	-moz-animation: color_change 10s infinite alternate;
@@ -369,7 +373,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color:rgba(220,80,85,1);
+    color:#bfd13f;
     font-weight: 200;
     margin: 0;
 }
@@ -378,7 +382,9 @@ body {
     opacity: 0;
 }
 
-
+#section5, #section6, #section7, #section8, #section9 {
+    background-color: #bfd13f;
+}
 
  
 a { color:#fff; text-decoration: none;}
@@ -512,6 +518,56 @@ a { color:#fff; text-decoration: none;}
         -moz-filter: blur(0px);
         -o-filter: blur(0px);
   }
+}
+
+#section9 .testo {
+    /*width: 100%;*/
+    text-align: center;
+    overflow: visible;
+}
+
+#section9 .testo.testopiccoloanim {
+    animation: spostamento 2s ease-in-out;
+     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes spostamento {
+    0% {left: 50%;}
+    100% {left: -590%;}
+
+}
+
+#piccolo {
+    white-space: nowrap;
+}
+
+#piccolo.picanim {
+    animation: piccolo 2s ease-in-out;
+     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes piccolo {
+    0% {font-size: 26px;}
+    100% {font-size: 550px;}
+
+}
+
+#section9 .typed-cursor.cursoreanim {
+    animation: cursore 2s ease-in-out;
+     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes cursore {
+    0% {font-size: 26px; opacity: 1}
+    50%{opacity: 0}
+    100% {font-size: 550px;opacity: 1}
+
 }
 
 /*ANIMAZIONE OSSESSIONATO*/

@@ -132,6 +132,9 @@ $(document).ready(function() {
                     typeSpeed: 0
                 });
                 $('#section9 .divsvg').addClass('anim')
+                 $('#section9 #piccolo').addClass('picanim')
+                 $('#section9 .testo').addClass('testopiccoloanim')
+                 $('#section9 .typed-cursor').addClass('cursoreanim')
                 /*$('#section6 .testo').addClass('testoinvenz')*/
 
 
