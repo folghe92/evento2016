@@ -302,7 +302,7 @@ body {
 a { color:#fff; text-decoration: none;}
 
 #cerchio7 {
-    fill: transparent !important;
+    fill: whitesmoke;
     stroke: #fff;
     stroke-width: 6px;
     stroke-linecap: round;
@@ -326,12 +326,12 @@ a { color:#fff; text-decoration: none;}
 }
 
 @keyframes forma {
-    0%   {left: 50%}
-    20%  {left: 45%}
-    85% {left: 45%}
-    96%{left:49%}
-    100% {left: 48%}
+    0%   {left: 50%;}
+    20%  {left: 45%;}
+    85% {left: 45%;}
+    100% {left: 49%;}
 }
+
 
 .cls-1 {
     fill: transparent;
@@ -344,7 +344,7 @@ a { color:#fff; text-decoration: none;}
 }
 
 .cerchioani .cls-1 {
-    animation: cerchio 6.3s ease-in-out;
+    animation: cerchio 1.3s ease-in-out;
     animation-iteration-count: 1;
     animation-delay: 3s;
     animation-fill-mode: forwards;
@@ -369,7 +369,7 @@ a { color:#fff; text-decoration: none;}
 #triangolo {
     width: 5.5vw !important;
     padding: 5px;
-    top: 54.5%;
+    top: 55%;
     left: 51%;
     position: absolute;
     transform: translate(-50%;-50%);
@@ -380,17 +380,17 @@ a { color:#fff; text-decoration: none;}
 #section7.trianim #triangolo {
     animation: triangolo 2.8s ease-in-out;
     animation-iteration-count: 1;
-    animation-delay: 0.8s;
+    animation-delay: 0.7s;
     animation-fill-mode: forwards;
 }
 
 @keyframes triangolo {
     0%   {transform: scale(0); opacity: 0; visibility: hidden; left: 51%}
-    10%  {transform: scale(1.2); opacity: 1; visibility: visible;left: 51%}
-    14% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
-    79% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
-    97% {transform: scale(1); opacity: 1; visibility: visible;left: 47%}
-    100% {transform: scale(1); opacity: 1; visibility: visible;left: 48%}
+    20% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
+    85% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
+    97% {transform: scale(1); opacity: 1; visibility: visible;left: 49%;}
+    99%{transform: scale(1);}
+    100% {transform: scale(1); opacity: 1; visibility: visible;left: 49%;}
 }
 
 .st0 {
