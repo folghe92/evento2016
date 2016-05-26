@@ -386,6 +386,27 @@ body {
     background-color: #bfd13f;
 }
 
+#section9 #puntodue {
+    color: #50b9b4;
+    margin-left: -1%;
+}
+
+#section9 .testo #puntodue.puntanim {
+    animation: scala 1s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes scala {
+    0% {font-size: 45vw}
+    100% {font-size: 160vw}
+
+}
+
+#section10 {
+    background-color: #50b9b4;
+}
  
 a { color:#fff; text-decoration: none;}
 
@@ -526,7 +547,7 @@ a { color:#fff; text-decoration: none;}
     overflow: visible;
 }
 
-#section9 .testo.testopiccoloanim {
+#section9 .testo .testopiccoloanim {
     animation: spostamento 2s ease-in-out;
      animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -535,7 +556,7 @@ a { color:#fff; text-decoration: none;}
 
 @keyframes spostamento {
     0% {left: 50%;}
-    100% {left: -590%;}
+    100% {left: -725%;}
 
 }
 
@@ -543,7 +564,7 @@ a { color:#fff; text-decoration: none;}
     white-space: nowrap;
 }
 
-#piccolo.picanim {
+#piccolo .picanim {
     animation: piccolo 2s ease-in-out;
      animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -552,7 +573,7 @@ a { color:#fff; text-decoration: none;}
 
 @keyframes piccolo {
     0% {font-size: 26px;}
-    100% {font-size: 550px;}
+    100% {font-size:45vw;}
 
 }
 

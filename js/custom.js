@@ -128,13 +128,31 @@ $(document).ready(function() {
             }
             if(index == 10){
                 $("#piccolo").typed({
-                    strings: ["Non ti preoccupare se ti senti piccolo."],
+                    strings: ["Non ti preoccupare se ti senti piccolo <span id='puntodue'>.</span>"],
                     typeSpeed: 0
                 });
                 $('#section9 .divsvg').addClass('anim')
                  $('#section9 #piccolo').addClass('picanim')
                  $('#section9 .testo').addClass('testopiccoloanim')
                  $('#section9 .typed-cursor').addClass('cursoreanim')
+                $('#section9 #puntodue').addClass('puntanim')
+
+                /*$('#section6 .testo').addClass('testoinvenz')*/
+
+
+            }
+            
+            if(index == 11){
+                $("#grande").typed({
+                    strings: ["Potrai diventare grande"],
+                    typeSpeed: 0
+                });
+                $('#section9 .divsvg').addClass('anim')
+                 $('#section9 #piccolo').addClass('picanim')
+                 $('#section9 .testo').addClass('testopiccoloanim')
+                 $('#section9 .typed-cursor').addClass('cursoreanim')
+                $('#section9 #puntodue').addClass('puntanim')
+
                 /*$('#section6 .testo').addClass('testoinvenz')*/
 
 
