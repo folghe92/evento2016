@@ -264,6 +264,14 @@ body {
     animation-fill-mode: forwards;
 }
 
+@keyframes mymove {
+    0%   {transform: scale(0); opacity: 0; visibility: hidden;}
+    50%   {transform: scale(0); opacity: 0; visibility: hidden;}
+    80%   {transform: scale(1); opacity: 1; visibility: visible;}
+    90%  {transform: scale(1.2); opacity: 1; visibility: visible;}
+    100% {transform: scale(1); opacity: 1; visibility: visible;}
+}
+
 #contmedaglia {
     padding: 5px;
     top: 50%;
@@ -302,10 +310,11 @@ body {
 @keyframes medaglia {
     0% {top:0; visibility: hidden; transform: translate(-50%) rotateY(0deg);}
     30% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
-    50% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
-    65% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
-    85% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
-    100% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
+    45% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
+    70% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
+    80% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
+    90% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
+    100% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
     
 }
 
@@ -315,20 +324,26 @@ body {
     background-color: whitesmoke;
     position: relative;
     z-index: 99;
+}
 
+#semplicita {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:rgba(220,80,85,1);
+    font-weight: 200;
+    margin: 0;
 }
 
 .opacity {
     opacity: 0;
 }
 
-@keyframes mymove {
-    0%   {transform: scale(0); opacity: 0; visibility: hidden;}
-    50%   {transform: scale(0); opacity: 0; visibility: hidden;}
-    80%   {transform: scale(1); opacity: 1; visibility: visible;}
-    90%  {transform: scale(1.2); opacity: 1; visibility: visible;}
-    100% {transform: scale(1); opacity: 1; visibility: visible;}
-}
+
 
  
 a { color:#fff; text-decoration: none;}

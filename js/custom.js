@@ -54,7 +54,7 @@ $(document).ready(function() {
             }
             if(index == 6){
                 $("#confondere").typed({
-                    strings: ["Ma attento a non confondere invenzine con innovazione:", "sono due cose diverse."],
+                    strings: ["Ma attento a non confondere invenzione con innovazione:", "sono due cose diverse."],
                     typeSpeed: 0
                 });
                 $('#section5 .divsvg').addClass('anim')
@@ -94,6 +94,9 @@ $(document).ready(function() {
                     strings: ["concentrato", "<span id='focalizzato'>focalizzato</span>", "ossessionato"],
                     typeSpeed: 100,
                     startDelay: 1800,
+                    /*callback: function() {
+                        ('#focalizzato').css({filter: blur(0px)});
+                    },*/
                     
                 });
                 $('#section8 .divsvg').addClass('anim')
@@ -115,7 +118,7 @@ $(document).ready(function() {
             }
             if(index == 10){
                 $("#piccolo").typed({
-                    strings: ["Non preoccuparti se ti senti piccolo."],
+                    strings: ["Non ti preoccupare se ti senti piccolo."],
                     typeSpeed: 0
                 });
                 $('#section9 .divsvg').addClass('anim')
