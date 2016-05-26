@@ -6,13 +6,23 @@ $(document).ready(function() {
                     strings: ["Be innovative, it's simple."],
                     typeSpeed: 0
                 });*/
-                $('#section0 .divsvg').addClass('anim')
+                $('#section0 .divsvg').addClass('anim');
+                $('#section0 #tag').addClass('scalestart');
+                setTimeout(function(){
+                  $.fn.fullpage.moveTo(2);
+                }, 3100);
+                
             }
             if(index == 2){
                $("#ciao").typed({
                     strings: ["Ciao "],
-                    typeSpeed: 0
+                    typeSpeed: 50
                 });
+                $('#section1 .divsvg').addClass('anim');
+                $('#punto').addClass('panim');
+                setTimeout(function(){
+                  $.fn.fullpage.moveTo(3);
+                }, 3100);
                 $('#section1 .divsvg').addClass('anim')
                 $('#punto').addClass('panim')
                 $('.lineetag').addClass('lineeanim')
@@ -101,7 +111,7 @@ $(document).ready(function() {
                 });
                 $('#section8 .divsvg').addClass('anim')
                 /*$('#section6 .testo').addClass('testoinvenz')*/
-                 setTimeout(function(){
+                setTimeout(function(){
                   $('#section8 #diventare .typed-cursor').css({'display': "none"})
                 }, 1300);
                 
