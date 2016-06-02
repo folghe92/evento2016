@@ -264,6 +264,10 @@ body {
     100% {transform: scale(600); opacity: 1; visibility: visible;}
 }
 
+#section4 {
+    background-color: #bfd13f;
+}
+
 #section3.coloranima {
     -webkit-animation: color_change 10s infinite alternate;
 	-moz-animation: color_change 10s infinite alternate;
@@ -297,6 +301,14 @@ body {
     animation-iteration-count: 1;
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    0%   {transform: scale(0); opacity: 0; visibility: hidden;}
+    50%   {transform: scale(0); opacity: 0; visibility: hidden;}
+    80%   {transform: scale(1); opacity: 1; visibility: visible;}
+    90%  {transform: scale(1.2); opacity: 1; visibility: visible;}
+    100% {transform: scale(1); opacity: 1; visibility: visible;}
 }
 
 #contmedaglia {
@@ -337,10 +349,11 @@ body {
 @keyframes medaglia {
     0% {top:0; visibility: hidden; transform: translate(-50%) rotateY(0deg);}
     30% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
-    50% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
-    65% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
-    85% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
-    100% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
+    45% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
+    70% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
+    80% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
+    90% {top:50%; visibility: visible; transform: translate(-50%) rotateY(180deg);}
+    100% {top:50%; visibility: visible; transform: translate(-50%) rotateY(0deg);}
     
 }
 
@@ -350,27 +363,56 @@ body {
     background-color: whitesmoke;
     position: relative;
     z-index: 99;
+}
 
+#semplicita {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#bfd13f;
+    font-weight: 200;
+    margin: 0;
 }
 
 .opacity {
     opacity: 0;
 }
 
-@keyframes mymove {
-    0%   {transform: scale(0); opacity: 0; visibility: hidden;}
-    50%   {transform: scale(0); opacity: 0; visibility: hidden;}
-    80%   {transform: scale(1); opacity: 1; visibility: visible;}
-    90%  {transform: scale(1.2); opacity: 1; visibility: visible;}
-    100% {transform: scale(1); opacity: 1; visibility: visible;}
+#section5, #section6, #section7, #section8, #section9 {
+    background-color: #bfd13f;
 }
 
+#section9 #puntodue {
+    color: #50b9b4;
+    margin-left: -1%;
+}
+
+#section9 .testo #puntodue.puntanim {
+    animation: scala 1s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes scala {
+    0% {font-size: 45vw}
+    100% {font-size: 160vw}
+
+}
+
+#section10 {
+    background-color: #50b9b4;
+}
  
 a { color:#fff; text-decoration: none;}
 
 #cerchio7 {
-    fill: transparent !important;
-    stroke: #fff;
+    fill: whitesmoke;
+    stroke: whitesmoke;
     stroke-width: 6px;
     stroke-linecap: round;
     stroke-miterlimit: 10;
@@ -393,16 +435,16 @@ a { color:#fff; text-decoration: none;}
 }
 
 @keyframes forma {
-    0%   {left: 50%}
-    20%  {left: 45%}
-    85% {left: 45%}
-    96%{left:49%}
-    100% {left: 48%}
+    0%   {left: 50%;}
+    20%  {left: 45%;}
+    85% {left: 45%;}
+    100% {left: 49%;}
 }
+
 
 .cls-1 {
     fill: transparent;
-    stroke: #fff;
+    stroke: whitesmoke;
     stroke-width: 6px;
     stroke-linecap: round;
     stroke-miterlimit: 10;
@@ -411,7 +453,7 @@ a { color:#fff; text-decoration: none;}
 }
 
 .cerchioani .cls-1 {
-    animation: cerchio 6.3s ease-in-out;
+    animation: cerchio 1.3s ease-in-out;
     animation-iteration-count: 1;
     animation-delay: 3s;
     animation-fill-mode: forwards;
@@ -428,7 +470,7 @@ a { color:#fff; text-decoration: none;}
   }
     100% {
         stroke-dashoffset: 0;
-        fill:white;
+        fill:whitesmoke;
     }
     
 }
@@ -436,7 +478,7 @@ a { color:#fff; text-decoration: none;}
 #triangolo {
     width: 5.5vw !important;
     padding: 5px;
-    top: 54.5%;
+    top: 55%;
     left: 51%;
     position: absolute;
     transform: translate(-50%;-50%);
@@ -447,17 +489,17 @@ a { color:#fff; text-decoration: none;}
 #section7.trianim #triangolo {
     animation: triangolo 2.8s ease-in-out;
     animation-iteration-count: 1;
-    animation-delay: 0.8s;
+    animation-delay: 0.7s;
     animation-fill-mode: forwards;
 }
 
 @keyframes triangolo {
     0%   {transform: scale(0); opacity: 0; visibility: hidden; left: 51%}
-    10%  {transform: scale(1.2); opacity: 1; visibility: visible;left: 51%}
-    14% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
-    79% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
-    97% {transform: scale(1); opacity: 1; visibility: visible;left: 47%}
-    100% {transform: scale(1); opacity: 1; visibility: visible;left: 48%}
+    20% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
+    85% {transform: scale(1); opacity: 1; visibility: visible;left: 51%}
+    97% {transform: scale(1); opacity: 1; visibility: visible;left: 49%;}
+    99%{transform: scale(1);}
+    100% {transform: scale(1); opacity: 1; visibility: visible;left: 49%;}
 }
 
 .st0 {
@@ -497,6 +539,56 @@ a { color:#fff; text-decoration: none;}
         -moz-filter: blur(0px);
         -o-filter: blur(0px);
   }
+}
+
+#section9 .testo {
+    /*width: 100%;*/
+    text-align: center;
+    overflow: visible;
+}
+
+#section9 .testo .testopiccoloanim {
+    animation: spostamento 2s ease-in-out;
+     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes spostamento {
+    0% {left: 50%;}
+    100% {left: -725%;}
+
+}
+
+#piccolo {
+    white-space: nowrap;
+}
+
+#piccolo .picanim {
+    animation: piccolo 2s ease-in-out;
+     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes piccolo {
+    0% {font-size: 26px;}
+    100% {font-size:45vw;}
+
+}
+
+#section9 .typed-cursor.cursoreanim {
+    animation: cursore 2s ease-in-out;
+     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes cursore {
+    0% {font-size: 26px; opacity: 1}
+    50%{opacity: 0}
+    100% {font-size: 550px;opacity: 1}
+
 }
 
 /*ANIMAZIONE OSSESSIONATO*/
