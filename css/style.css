@@ -236,7 +236,7 @@ body {
     overflow: visible;
 }
 
-#punto {
+/*#punto {
     height: 5px;
     width: 5px;
     background: rgba(220,80,85,1);
@@ -246,24 +246,46 @@ body {
     left: 52.2%;
     transform: translate(-50%,-50%);
     visibility: hidden;
+}*/
+
+#section1 span#punto {
+    color: rgba(220,80,85,1);
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-58%);
+    margin: 0;
+    font-size: 50px;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
 }
 
-#punto.panim {
-    animation: punto 2s cubic-bezier(0.85, -0.01, 1, 1);
+#section1 span#punto.panim {
+    animation: punto 1s ease-in-out;
     animation-iteration-count: 1;
-    animation-delay: 0.5s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
 
 }
 
 @keyframes punto {
+    0% {font-size:  0; opacity: 0; visibility: hidden;z-index: 9;}
+    5% {font-size:  70px; opacity: 1; visibility: visible;z-index: 9;}
+    10% {font-size:  50px; opacity: 1; visibility: visible;z-index: 9;}
+    70% {font-size:  50px; opacity: 1; visibility: visible;z-index: 9;}
+   100% {font-size: 1800vw; opacity: 1; visibility: visible;transform: translate(-51%,-66%); z-index: 9;}
+}
+
+
+/*@keyframes punto {
     0% {transform: scale(0); opacity: 0; visibility: hidden;}
     1% {transform: scale(1.2); opacity: 1; visibility: visible;}
     2% {transform: scale(1) ; opacity: 1; visibility: visible;}
     20% {transform: scale(1); opacity: 1; visibility: visible;}
     100% {transform: scale(600); opacity: 1; visibility: visible;}
 }
-
+*/
 #section4 {
     background-color: #bfd13f;
 }
@@ -404,7 +426,7 @@ body {
 
 }
 
-#section10 {
+#section10, #section11 {
     background-color: #50b9b4;
 }
  

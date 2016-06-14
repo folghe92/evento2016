@@ -15,14 +15,16 @@ $(document).ready(function() {
             }
             if(index == 2){
                $("#ciao").typed({
-                    strings: ["Ciao "],
+                    strings: ["Ciao<span id='punto'>.</span> "],
                     typeSpeed: 50
                 });
                 $('#section1 .divsvg').addClass('anim');
-                $('#punto').addClass('panim');
                 setTimeout(function(){
+                    $('#section1 span#punto').addClass('panim');
+                }, 2000);
+               /* setTimeout(function(){
                   $.fn.fullpage.moveTo(3);
-                }, 3100);
+                }, 3100);*/
                 $('#section1 .divsvg').addClass('anim')
                 $('#punto').addClass('panim')
                 $('.lineetag').addClass('lineeanim')
@@ -36,7 +38,7 @@ $(document).ready(function() {
             }
             if(index == 3){
                 $("#ricetta").typed({
-                    strings: ["Oggi ti insegniamo una semplice ricetta", "per fare"],
+                    strings: ["Oggi ti insegniamo una semplice ricetta, per fare"],
                     typeSpeed: 0
                 });
                 $('#section2 .divsvg').addClass('anim')
@@ -64,7 +66,7 @@ $(document).ready(function() {
             }
             if(index == 6){
                 $("#confondere").typed({
-                    strings: ["Ma attento a non confondere invenzione con innovazione:", "sono due cose diverse."],
+                    strings: ["Ma attento a non confondere invenzione con innovazione."],
                     typeSpeed: 0
                 });
                 $('#section5 .divsvg').addClass('anim')
@@ -147,13 +149,25 @@ $(document).ready(function() {
                     strings: ["Potrai diventare grande"],
                     typeSpeed: 0
                 });
-                $('#section9 .divsvg').addClass('anim')
-                 $('#section9 #piccolo').addClass('picanim')
-                 $('#section9 .testo').addClass('testopiccoloanim')
-                 $('#section9 .typed-cursor').addClass('cursoreanim')
-                $('#section9 #puntodue').addClass('puntanim')
+                $('#section10 .divsvg').addClass('anim')
+                 $('#section10 #piccolo').addClass('picanim')
+                 $('#section10 .testo').addClass('testopiccoloanim')
+                 $('#section10 .typed-cursor').addClass('cursoreanim')
+                $('#section10 #puntodue').addClass('puntanim')
 
-                /*$('#section6 .testo').addClass('testoinvenz')*/
+
+
+            }
+            
+            if(index == 12){
+                $("#diversi").typed({
+                    strings: ["è importante trovare persone e competenze diverse"],
+                    typeSpeed: 0
+                });
+                $('#section11 .divsvg').addClass('anim')
+                 $('#section11 .testo').addClass('testoinvenz')
+                 
+
 
 
             }
