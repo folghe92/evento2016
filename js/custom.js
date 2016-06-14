@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
+
         'afterLoad': function(anchorLink, index){
             if(index == 1){
                 /*$("#tag").typed({
